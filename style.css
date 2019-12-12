@@ -11,6 +11,12 @@ h1 {
 	max-width: 600px;
 	font-family: 'Oxygen', sans-serif;
 }
+
+footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
 pre {
 	font-family: 'Oxygen Mono', monospace;
 	background: #fff;
