@@ -48,26 +48,26 @@
 
 <script>
 export default {
-  name: "Lovac",
-  data: function() {
+  name: 'Lovac',
+  data: function () {
     return {
-      imgs: "", // Img Url , string or Array
+      imgs: '', // Img Url , string or Array
       visible: false,
       index: 0 // default
-    };
+    }
   },
 
   methods: {
-    show(img) {
-      console.log(img);
-      this.imgs = img;
-      this.visible = true;
+    show (img) {
+      console.log(img)
+      this.imgs = img
+      this.visible = true
     },
-    handleHide() {
-      this.visible = false;
+    handleHide () {
+      this.visible = false
     }
   }
-};
+}
 </script>
 
 <style scoped>

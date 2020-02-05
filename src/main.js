@@ -10,32 +10,32 @@ import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fort
 
 import Lightbox from 'vue-easy-lightbox'
 
-import VueCodeHighlight from 'vue-code-highlight';
-import 'prism-es6/components/prism-markup-templating';
-import 'prism-es6/components/prism-java';
-import 'prism-es6/components/prism-c';
+import VueCodeHighlight from 'vue-code-highlight'
+import 'prism-es6/components/prism-markup-templating'
+import 'prism-es6/components/prism-java'
+import 'prism-es6/components/prism-c'
 
 import './prism-monokai.css'
 
-import { CardPlugin } from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+import { CardPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 library.add(
   faTwitterSquare,
   faGithubSquare,
   faItchIo
-);
+)
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-Vue.component('font-awesome-layers', FontAwesomeLayers);
-Vue.component('font-awesome-layers-text', FontAwesomeLayersText);
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-layers', FontAwesomeLayers)
+Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 
-Vue.use(Lightbox);
-Vue.use(VueCodeHighlight);
-Vue.use(CardPlugin);
+Vue.use(Lightbox)
+Vue.use(VueCodeHighlight)
+Vue.use(CardPlugin)
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
@@ -43,4 +43,4 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
-});
+})
