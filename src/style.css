@@ -1,0 +1,37 @@
+h1 {
+	color: rgb(0.4, 0.2, 0.6);
+}
+
+img {
+	padding-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.img-clickable {
+	cursor: pointer;
+}
+
+.content {
+	margin: auto;
+	max-width: 600px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+pre {
+	font-family: 'Oxygen Mono', monospace;
+	background: #fff;
+	border: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
