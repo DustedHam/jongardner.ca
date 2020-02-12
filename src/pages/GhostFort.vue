@@ -12,14 +12,14 @@
       </p>
       <div v-highlight>
       <pre class="lang-js"><code>
-case WORKPHASE_EARLY:		
+case WORKPHASE_EARLY:
 	while (game->gameQueue->PopEarly(gameObject))
 	{
 		gameObject->EarlyUpdate(game->DeltaTime());
 	}
 
 	SetWorkPhase(WORKPHASE_WAIT);
-	break;		
+	break;
 		</code></pre>
       </div>
       <p>The execution order is pretty simple. All active entities must finish their early update before main update starts, and likewise for the main and late updates. A pool of worker threads pulls from the current queue as fast as they can and, when the queue is empty, they move onto the next update phase. Once all the update phases are complete, I swap the current and buffer queues pointers.</p>
@@ -30,35 +30,35 @@ case WORKPHASE_EARLY:
 
 <script>
 export default {
-  name: "GhostFort",
-  data: function() {
+  name: 'GhostFort',
+  data: function () {
     return {
-      imgs: "", // Img Url , string or Array
+      imgs: '', // Img Url , string or Array
       visible: false,
       index: 0 // default
-    };
+    }
   },
 
   methods: {
-    show(img) {
-      console.log(img);
-      this.imgs = img;
-      this.visible = true;
+    show (img) {
+      console.log(img)
+      this.imgs = img
+      this.visible = true
     },
-    handleHide() {
-      this.visible = false;
+    handleHide () {
+      this.visible = false
     }
   },
 
-  mounted: function() {
-    const codeTags = document.getElementsByTagName("code");
+  mounted: function () {
+    const codeTags = document.getElementsByTagName('code')
 
     for (let i = 0; i < codeTags.length; i++) {
-      const code = codeTags[i];
-      code.innerHTML = code.innerHTML.trim();
+      const code = codeTags[i]
+      code.innerHTML = code.innerHTML.trim()
     }
   }
-};
+}
 </script>
 
 <style scoped>

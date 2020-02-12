@@ -19,10 +19,10 @@
       <p>The last bit of Finley that I really enjoy and might salvage my next multiplayer game is how I handle clients downloading maps. Clients download the current map when they connect to the server, I actually did this with a small web servlet and the maps are JSON files. I went the JSON route to allow players to easily make custom maps, and because it’s built like a web API server hosts can set up a remote web site as a fast download location, or community ran map databases could also be possible. Most multiplayer games live or die from their communities so I thought making customizing maps and weapons easy for users was important.</p>
       <div v-highlight>
         <pre class="lang-java"><code>
-private int getLinearBitmask(int x, int y) 
+private int getLinearBitmask(int x, int y)
 {
 	int bitmask = 0;
-		
+
 	if(isWall(x, y - 1)) 	// North
 		bitmask |= (1 << 3);
 	if(isWall(x, y + 1)) 	// South
@@ -34,11 +34,11 @@ private int getLinearBitmask(int x, int y)
 	return bitmask;
 }
 
-private Vector2i getWallSprite(int x, int y) 
+private Vector2i getWallSprite(int x, int y)
 {
 	int bitmask = getLinearBitmask(x, y);
-	
-	switch (bitmask) 
+
+	switch (bitmask)
 	{
 	case WALL_MASK_EAST:
 	case WALL_MASK_WEST:
@@ -62,16 +62,16 @@ private Vector2i getWallSprite(int x, int y)
 
 <script>
 export default {
-  name: "Finley",
-  mounted: function() {
-    const codeTags = document.getElementsByTagName("code");
+  name: 'Finley',
+  mounted: function () {
+    const codeTags = document.getElementsByTagName('code')
 
     for (let i = 0; i < codeTags.length; i++) {
-      const code = codeTags[i];
-      code.innerHTML = code.innerHTML.trim();
+      const code = codeTags[i]
+      code.innerHTML = code.innerHTML.trim()
     }
   }
-};
+}
 </script>
 
 <style scoped>

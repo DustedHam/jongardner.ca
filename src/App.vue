@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import Social from "./components/Social";
+import Social from './components/Social'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Social
   }
-};
+}
 </script>
 
 <style>

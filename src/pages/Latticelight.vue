@@ -16,8 +16,8 @@ Vector3f[] colors = new Vector3f[4];
 for(int x = 0; x < example.getWidth(); x ++)
 	for(int c = 0; c < colors.lenght; c++)
 		colors[c] = new Vector3f(
-								(float) Math.random(), 
-								(float) Math.random(), 
+								(float) Math.random(),
+								(float) Math.random(),
 								(float) Math.random())
 	}
 	example.bufQuadColor(x, 0, colors);
@@ -44,17 +44,17 @@ class CelestialBody
 	@DebugVariable
 	private int radius;
 	private Quaternionf quatRotation;
-	
+
 	@DebugVariable
 	public	Vector3f position;
-	
+
 			</code></pre>
         </div>
         <div v-highlight>
           <pre class="lang-java"><code>
 	body = new CelestialBody(new Vector3f(50, 25, 0), 30);
 	DebugView.put(body, "test-body");
-	
+
 		      </code></pre>
         </div>
       </div>
@@ -64,35 +64,35 @@ class CelestialBody
 
 <script>
 export default {
-  name: "Latticelight",
-  data: function() {
+  name: 'Latticelight',
+  data: function () {
     return {
-      imgs: "", // Img Url , string or Array
+      imgs: '', // Img Url , string or Array
       visible: false,
       index: 0 // default
-    };
+    }
   },
 
   methods: {
-    show(img) {
-      console.log(img);
-      this.imgs = img;
-      this.visible = true;
+    show (img) {
+      console.log(img)
+      this.imgs = img
+      this.visible = true
     },
-    handleHide() {
-      this.visible = false;
+    handleHide () {
+      this.visible = false
     }
   },
 
-  mounted: function() {
-    const codeTags = document.getElementsByTagName("code");
+  mounted: function () {
+    const codeTags = document.getElementsByTagName('code')
 
     for (let i = 0; i < codeTags.length; i++) {
-      const code = codeTags[i];
-      code.innerHTML = code.innerHTML.trim();
+      const code = codeTags[i]
+      code.innerHTML = code.innerHTML.trim()
     }
   }
-};
+}
 </script>
 
 <style scoped>
