@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "lint": "eslint --fix --ext .js,.vue src ",
     "build": "node build/build.js",
-    "aws-deploy-stack": "aws --region us-east-1 cloudformation deploy --template-file ./template.yml --stack-name jon-portfolio-stack --capabilities CAPABILITY_IAM",
+    "aws-deploy-stack": "aws --region us-east-1 cloudformation deploy --template-file ./template.yml --stack-name jon-portfolio-stack --capabilities CAPABILITY_IAM --no-fail-on-empty-changeset",
     "aws-deploy-s3": "aws --region us-east-1 s3 sync ./dist/ s3://jongardner.ca/ --delete"
   },
   "dependencies": {
