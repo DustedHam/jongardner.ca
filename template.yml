@@ -73,6 +73,11 @@ Resources:
             Cookies:
               Forward: none
           ViewerProtocolPolicy: redirect-to-https
+        CustomErrorResponses:
+          - ErrorCode: '403'
+            ResponsePagePath: "/"
+            ResponseCode: '200'
+            ErrorCachingMinTTL: '300'
         PriceClass: PriceClass_100
         ViewerCertificate:
           AcmCertificateArn: !Ref Certificate
