@@ -7,6 +7,7 @@ import Finley from '@/pages/Finley'
 import MeshGeneration from '@/pages/MeshGeneration'
 import Latticelight from '@/pages/Latticelight'
 import GhostFort from '@/pages/GhostFort'
+import CubeMaze from '@/pages/CubeMaze'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
       path: '/ghostfort',
       name: 'GhostFort',
       component: GhostFort
+    },
+    {
+      path: '/cubemaze',
+      name: 'CubeMaze',
+      component: CubeMaze
     }
   ]
 })

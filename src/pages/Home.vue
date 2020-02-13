@@ -27,6 +27,14 @@
         </div>
 
         <div class="col-md-4 col-lg-4 project">
+          <router-link to="CubeMaze">
+            <img src="static/images/index/cubemaze.png" />
+            <h3>CubeMaze</h3>
+          </router-link>
+          <div class="description">Minimalizm Game-Jam</div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 project">
           <router-link to="MeshGeneration">
             <img src="static/images/index/mesh.png" />
             <h3>Mesh Generation</h3>
