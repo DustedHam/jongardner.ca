@@ -14,12 +14,16 @@
 
 <script>
 export default {
-  name: 'Social'
-}
+  name: "Social"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.Social {
+  padding-top: 20px;
+}
+
 .fa-twitter,
 .fa-twitter-square {
   color: #00aced;

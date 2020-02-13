@@ -4,12 +4,20 @@
       <div class="row">
         <div class="col-md-4 col-lg-4 project">
           <!--<a href=""> -->
-          <img src="static/images/index/notdeadinside.png" />
-          <h3>Jonathan Gardner</h3>
+          <img src="static/images/index/profile.png" />
+          <h3>Jon Gardner</h3>
           <!--</a>	-->
           <div class="description">Game Developer</div>
         </div>
 
+        <div class="col-md-8 col-lg-8 project intro">
+          <p>I've been playing with and programming games since I first started programming 8 years ago. Though I've only been doing it profesionally for a third of that time, I've had the oppertunity to work with a whole host of large media organisations.</p>
+          <p> I'm perpetually working on side projects and game-jams both because I love making games and also to improve my skills as a programmer and designer</p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
         <div class="col-md-4 col-lg-4 project">
           <router-link to="Lovac">
             <img src="static/images/index/planet.png" />
@@ -57,9 +65,22 @@
 
 <script>
 export default {
-  name: 'Home'
-}
+  name: "Home"
+};
 </script>
 
 <style scoped>
+.intro {
+  text-align: left;
+  font-size: 13px;
+}
+
+.project {
+	padding-top: 20px;
+}
+
+.description {
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 12px;
+}
 </style>
