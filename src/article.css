@@ -1,0 +1,9 @@
+.content {
+    text-align: justify;
+}
+
+.note {
+    text-align: left;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 10px;
+}
