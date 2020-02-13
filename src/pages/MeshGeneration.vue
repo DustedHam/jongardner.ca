@@ -89,4 +89,5 @@ export default {
 </script>
 
 <style scoped>
+@import "../article.css";
 </style>

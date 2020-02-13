@@ -41,34 +41,35 @@
         bucket size of 4. Instead of 1000s of tiles, the collision check only has to look at a few rectangles that
         get recursively smaller until it stops at a tile.
       </p>
-        <img src="static/images/lovac/ship_collisions.png" class="img-responsive" />
+      <img src="static/images/lovac/ship_collisions.png" class="img-responsive" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Lovac',
-  data: function () {
+  name: "Lovac",
+  data: function() {
     return {
-      imgs: '', // Img Url , string or Array
+      imgs: "", // Img Url , string or Array
       visible: false,
       index: 0 // default
-    }
+    };
   },
 
   methods: {
-    show (img) {
-      console.log(img)
-      this.imgs = img
-      this.visible = true
+    show(img) {
+      console.log(img);
+      this.imgs = img;
+      this.visible = true;
     },
-    handleHide () {
-      this.visible = false
+    handleHide() {
+      this.visible = false;
     }
   }
-}
+};
 </script>
 
 <style scoped>
+@import "../article.css";
 </style>

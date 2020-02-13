@@ -79,6 +79,11 @@ export default {
 	padding-top: 20px;
 }
 
+.project h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
 .description {
   font-family: 'Oxygen Mono', monospace;
   font-size: 12px;
