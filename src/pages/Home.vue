@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-md-8 col-lg-8 project intro">
-          <p>I've been playing with and developing games since I first started programming 8 years ago. Though I've only been doing it profesionally for a third of that time, I've had the opportunity to work with a whole host of large media organisations.</p>
+          <p>I've been playing with developing games since I first started programming 8 years ago. Though I've only been doing it profesionally for a third of that time, I've had the opportunity to work with a whole host of large media organisations.</p>
           <p> I'm perpetually working on side projects and game-jams both because I love making games and to improve my skills as a programmer and designer</p>
         </div>
       </div>
