@@ -1,5 +1,6 @@
 .content {
     text-align: justify;
+    padding: 10px;
 }
 
 .note {
@@ -7,3 +8,7 @@
     font-family: 'Oxygen Mono', monospace;
     font-size: 10px;
 }
+
+.padtop {
+    padding-top: 30px;
+  }
