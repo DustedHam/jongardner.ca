@@ -44,7 +44,7 @@
         get recursively smaller until it stops at a tile.
       </p>
       <p>
-        Idealy I'd like to be able rewite this system to work within Unity's ECS system. Quadtrees are typically a node-graph type data structure though and
+        Ideally I'd like to be able rewite this system to work within Unity's ECS system. Quadtrees are typically a node-graph type data structure though and
         ECS works best with all the data arranged linear in memory. I'm still trying to work out how/if it would be better at all.
       </p>
       <div class="note">click for a gif</div>
@@ -114,7 +114,6 @@ export default {
 
   methods: {
     show(img) {
-      console.log(img);
       this.imgs = img;
       this.visible = true;
     },
@@ -136,8 +135,4 @@ export default {
 
 <style scoped>
 @import "../article.css";
-
-.padtop {
-  padding-top: 30px;
-}
 </style>
