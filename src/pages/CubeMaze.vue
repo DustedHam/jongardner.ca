@@ -1,5 +1,5 @@
 <template>
-  <div class="NAME">
+  <div class="CubeMaze">
     <div class="content">
       <vue-easy-lightbox :visible="visible" :imgs="imgs" @hide="handleHide"></vue-easy-lightbox>
 
@@ -171,7 +171,7 @@ private void AttachEdgeNode(
 
 <script>
 export default {
-  name: "NAME",
+  name: "CubeMaze",
   data: function() {
     return {
       imgs: "", // Img Url , string or Array
