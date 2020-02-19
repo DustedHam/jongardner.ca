@@ -1,5 +1,5 @@
 <template>
-  <div class="NAME">
+  <div class="CubeMaze">
     <div class="content">
       <vue-easy-lightbox :visible="visible" :imgs="imgs" @hide="handleHide"></vue-easy-lightbox>
 
@@ -132,7 +132,7 @@ private void AttachEdgeNode(
       </div>
 
       <p class="padtop">
-        It's not the cleanest and I'm sure it's not the most optimal way to build the node mesh, but it was the
+        It's not the cleanest and it's not the most optimal way to build the node-graph, but it was the
         way that was the quickest to write and fit with how the rest of the cube generation was written.
       </p>
 
@@ -143,7 +143,7 @@ private void AttachEdgeNode(
 
       <p>
         The algoritim you see in the final game is a modified version of the Kruskal-S algoritim. I tested
-        a few diffrent maze generators, it was that ended up feeling the best. I found this blog that explains diffrent
+        a few diffrent maze generators, it was what ended up feeling the best. I find this blog explains diffrent
         types of generation extremely well
         <a
           href="http://weblog.jamisbuck.org/2011/1/3/maze-generation-kruskal-s-algorithm"
@@ -171,7 +171,7 @@ private void AttachEdgeNode(
 
 <script>
 export default {
-  name: "NAME",
+  name: "CubeMaze",
   data: function() {
     return {
       imgs: "", // Img Url , string or Array
