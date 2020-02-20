@@ -12,7 +12,7 @@
 
       <p>
         While reserching types of maze generation I found that most are built ontop of a 2D array, that's fine for flat surfaces,
-        But it would make it difficult for wrapping around a cube, so I opted to build a node map with the points centered on each
+        But it would make it difficult for wrapping around a cube, so I opted to build a node-graph with the points centered on each
         tile of the mesh instead.
       </p>
 
@@ -137,7 +137,7 @@ private void AttachEdgeNode(
       </p>
 
       <p>
-        Because I seperated out the maze generation itself and converted a few common algoritims to use a node-map
+        Because I seperated out the maze generation itself and converted a few common algoritims to use a node-graph
         instead of an array, it was really easy to swap in a diffrent algoritim, or even in the future diffrent shapes.
       </p>
 
@@ -192,6 +192,8 @@ export default {
   },
 
   mounted: function() {
+    window.scrollTo(0, 0);
+
     const codeTags = document.getElementsByTagName("code");
 
     for (let i = 0; i < codeTags.length; i++) {

@@ -123,6 +123,8 @@ export default {
   },
 
   mounted: function() {
+    window.scrollTo(0, 0);
+
     const codeTags = document.getElementsByTagName("code");
 
     for (let i = 0; i < codeTags.length; i++) {
