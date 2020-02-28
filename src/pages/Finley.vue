@@ -16,7 +16,6 @@
         <img src="https://pbs.twimg.com/media/CmisQGCWYAI6B4K.jpg" class="img-responsive" />
       </a>
       <p>The sprite selection for walls is one part I really enjoy, it’s not terribly complex but I think it’s pretty neat. Depending on the neighboring tiles a different sprite would have to be selected, to avoid having a giant if statement, I used a small amount of bit-shifting and a switch case.</p>
-      <p>The last bit of Finley that I really enjoy and might salvage my next multiplayer game is how I handle clients downloading maps. Clients download the current map when they connect to the server, I actually did this with a small web servlet and the maps are JSON files. I went the JSON route to allow players to easily make custom maps, and because it’s built like a web API server hosts can set up a remote web site as a fast download location, or community ran map databases could also be possible. Most multiplayer games live or die from their communities so I thought making customizing maps and weapons easy for users was important.</p>
       <div v-highlight>
         <pre class="lang-java"><code>
 private int getLinearBitmask(int x, int y)
@@ -56,6 +55,7 @@ private Vector2i getWallSprite(int x, int y)
     ...
         </code></pre>
       </div>
+      <p class="padtop">The last bit of Finley that I really enjoy and might salvage my next multiplayer game is how I handle clients downloading maps. Clients download the current map when they connect to the server, I actually did this with a small web servlet and the maps are JSON files. I went the JSON route to allow players to easily make custom maps, and because it’s built like a web API server hosts can set up a remote web site as a fast download location, or community ran map databases could also be possible. Most multiplayer games live or die from their communities so I thought making customizing maps and weapons easy for users was important.</p>
     </div>
   </div>
 </template>
